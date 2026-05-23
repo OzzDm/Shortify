@@ -146,6 +146,9 @@
                         <include>**/*.class</include>
                     </includes>
                   </resource>
+                  <resource>
+                      <directory>src/main/resources</directory>
+                  </resource>
                 </resources>
               </configuration>
           </execution>
