@@ -1,0 +1,5 @@
+#rename the filename from database.properties.template to database.properties before use
+db.driver=shortify/src/main/resources/database.properties
+db.url=jdbc:mysql://<database_server>:<port>/<database_name>
+db.username=<username>
+db.password=<passowrd>
