@@ -238,11 +238,11 @@ Possible future enhancements:
 
 # Screenshots 📸
 
-![alt text](Shortify-GitHub-GIF.gif)
+![alt text](readme-assets/Shortify-GitHub-GIF.gif)
 
-![alt text](image-expiry.png)
+![alt text](readme-assets/image-expiry.png)
 
-![alt text](image-validation.png)
+![alt text](readme-assets/image-validation.png)
 
 ---
 
