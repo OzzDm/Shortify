@@ -35,8 +35,8 @@ public class UrlDao {
                          .setParameter("urlId", urlId)
                          .executeUpdate();
 
-        if(entitiesUpdated > 0){
-            System.out.println("Click Count Updated Successfully!");
-        }
+        // if(entitiesUpdated > 0){
+        //     // System.out.println("Click Count Updated Successfully!");
+        // }
     }
 }

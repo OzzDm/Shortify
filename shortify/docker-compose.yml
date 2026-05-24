@@ -1,0 +1,30 @@
+services:
+  # Note: service names matter because it become hostnames. So, the Spring app will connect with jdbc:mysql://<mysql-service-name>:3306/shortify
+  shortify-mysql:  
+    image: mysql:8
+    container_name: shortify-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root # use strong password here
+      MYSQL_DATABASE: shortify
+    ports:
+      - 3306:3306 # HOST_PORT: CONTAINER_PORT
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - shortify-network
+
+  app-image:
+    build: .
+    container_name: shortify-app
+    ports: 
+      - 8080:8080
+    depends_on: 
+      - shortify-mysql
+    networks: 
+      - shortify-network
+
+networks:
+  shortify-network:
+  
+volumes:
+    mysql_data:
